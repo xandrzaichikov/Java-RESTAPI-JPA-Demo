@@ -21,7 +21,6 @@ configurations.all {
 }
 
 dependencies {
-//	compile 'org.springframework:spring-webmvc:4.1.6.RELEASE'
 	compile 'org.springframework:spring-webmvc:4.3.8.RELEASE'
 	compile 'javax.servlet:jstl:1.2'
     compile 'commons-dbcp:commons-dbcp:1.4'
@@ -36,20 +35,9 @@ dependencies {
     compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.8.8'
 }
 
-/*dependencies {
-    def tomcatVersion = '7.0.59'
-    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
-           "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
-           "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
-}
-*/
-
 gretty {
     httpPort = 8092
-    // debugPort = 50075
     contextPath = 'restfull'
-//    servletContainer = 'tomcat7'
-//    servletContainer = 'jetty9'
     servletContainer = 'tomcat8'
 }
 
