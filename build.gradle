@@ -45,3 +45,8 @@ task copyDeps(type: Copy) {
   from configurations.runtime
   into 'lib'
 }
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.2'
+}
